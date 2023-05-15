@@ -12,9 +12,9 @@ var userCredentials = {
     var enteredPassword = document.getElementById("user_password").value;
 
     if (userCredentials.hasOwnProperty(enteredUsername)) {
-      // Verify if the entered password matches the stored password
+      
       if (userCredentials[enteredUsername] === enteredPassword) {
-        
+        location.href = 'main.html';
         alert("Login successful!");
     
       } else {
