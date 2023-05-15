@@ -11,19 +11,23 @@
     <div class="container"> 
         <div class="login">
             <h2 class="login_text">Log in</h2>
-            <label for="user_name">User name</label><br>
-            <input type="text" id="user_name" name="user_name" value=""><br>
-            <label for="user_password">Password</label><br>
-            <input type="text" id="user_password" name="user_password" value=""><br><br>
-            <input type="submit" class="user_login" value="Login"><br>
+            <form onsubmit="return handleLogin()">
+                <label for="user_name">User name</label><br>
+                <input type="text" id="user_name" name="user_name" value=""><br>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password" value=""><br><br>
+                <input type="submit" class="user_login" value="Login"><br>
+              </form>
             <br>
             <br>
             <h2 class="login_text">Create user</h2>
-            <label for="new_accout">User name</label><br>
-            <input type="text" id="new_accout" name="new_accout" value=""><br>
-            <label for="new_password">Password</label><br>
-            <input type="text" id="new_password" name="new_password" value=""><br><br>
-            <input type="submit" class="create_button"value="Create">
+            <form onsubmit="return handleCreateUser()">
+                <label for="new_account">User name</label><br>
+                <input type="text" id="new_account" name="new_account" value=""><br>
+                <label for="new_password">Password</label><br>
+                <input type="password" id="new_password" name="new_password" value=""><br><br>
+                <input type="submit" class="create_button" value="Create">
+              </form>
         </div>
     </div>
     <script src="main.js"></script>
