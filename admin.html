@@ -8,31 +8,39 @@
     <title>Voting</title>
 </head>
 <body>
-    <h1>Votes</h1>
+    <h1>Admin</h1>
     <div class="voting_section">
-        <div>
+        <div id="first">
             <h2>First vote:</h2>
             <i id="first_up" class="fa-regular fa-thumbs-up">: </i>
 
             <br>
             <br>
             <i id="first_down" class="fa-regular fa-thumbs-down"></i>
+            <input type="button" value="Delete vote" onclick="deleteFirst('first')">
         </div>
-        <div>
+        <div id="second">
             <h2>Second vote:</h2>
             <i id="second_up" class="fa-regular fa-thumbs-up"></i>
             <br>
             <br>
             <i id="second_down" class="fa-regular fa-thumbs-down"></i>
+            <input type="button" value="Delete vote" onclick="deleteSecond('second')">
         </div>
-        <div>
+        <div id="third">
             <h2>Third vote:</h2>
             <i id="third_up" class="fa-regular fa-thumbs-up"></i>
             <br>
             <br>
             <i id="third_down" class="fa-regular fa-thumbs-down"></i>
+            <input type="button" value="Delete vote" onclick="deleteThird('third')">
+        </div>
+        <div id="add_vote">
+
         </div>
     </div>
+    <input type="button" value="Add vote" onclick="addVote()">
+    <input type="button" value="Delete all votes" onclick="deleteAll()">
 
 
     <script src="https://kit.fontawesome.com/3688cb4cbc.js" crossorigin="anonymous"></script>
